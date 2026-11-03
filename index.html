@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSafe - Phishing Awareness</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    text-align: center;
+    padding: 25px;
+}
+.card {
+    background: white;
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #ccc;
+}
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+button {
+    background: #3157c8;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#lesson {
+    display: none;
+    background: #e0f7e9;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>CyberSafe</h1>
+    <h3>Social Account Login Demo</h3>
+
+    <p>This is a cybersecurity training simulation.</p>
+
+    <input type="text"
+    placeholder="Demo username">
+
+    <input type="password"
+    placeholder="Demo password">
+
+    <br><br>
+
+    <button onclick="showLesson()">Continue</button>
+
+    <div id="lesson">
+        <h2>⚠️ Phishing Awareness!</h2>
+
+        <p>This was a simulated login page.</p>
+
+        <p><b>Never enter your real password or OTP
+        on an untrusted website.</b></p>
+
+        <p>Real credentials are not collected or transmitted
+        by this demonstration.</p>
+
+        <h3>Remember:</h3>
+        <p>1. Check website addresses.</p>
+        <p>2. Never share OTPs.</p>
+        <p>3. Enable two-factor authentication.</p>
+    </div>
+</div>
+
+<script>
+function showLesson() {
+    document.getElementById("lesson").style.display = "block";
+}
+</script>
+
+</body>
+</html>
